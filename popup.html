@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, sans-serif; width: 340px; padding: 12px; font-size: 13px; }
+  button { width: 100%; padding: 8px; margin-bottom: 8px; font-size: 13px; cursor: pointer; }
+  #status { white-space: pre-wrap; margin: 6px 0; }
+  #list { max-height: 260px; overflow-y: auto; }
+  .row { display: flex; align-items: center; padding: 4px 0; border-top: 1px solid #ddd; }
+  .row label { flex: 1; cursor: pointer; }
+  .row input { margin-right: 8px; }
+  .gone { color: #999; }
+</style>
+</head>
+<body>
+  <button id="save">Save state + disable all</button>
+  <button id="restore">Restore all saved state</button>
+  <button id="reset">Reset saved state (keep extensions as they are now)</button>
+  <div id="status"></div>
+  <div id="list"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
